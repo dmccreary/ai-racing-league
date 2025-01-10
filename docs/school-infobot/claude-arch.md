@@ -1,6 +1,6 @@
 # Claude Architecture
 
-![](architecture.png)
+![Architecture Diagram](./architecture.png)
 
 ```mermaid
 flowchart LR
@@ -22,11 +22,11 @@ flowchart LR
         O
         C
     end
-    ```
+```
 
 ## Tools and Implementation
 
-    Here are the recommended tools and implementation approach:
+Here are the recommended tools and implementation approach:
 
 ### 1.  **Speech-to-Text (On Raspberry Pi)**:
 

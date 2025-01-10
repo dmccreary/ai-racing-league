@@ -45,9 +45,9 @@ nav:
       - Introduction: proposal-generator/index.md
       - Sample Proposal: proposal-generator/proposal.md
   - School Infobot:
-    - school-infobot/index.md
-    - school-infobot/claud-arch.md
-    - school-infobot/streaming-tools.md
+    - Introduction: school-infobot/index.md
+    - Architecture: school-infobot/claude-arch.md
+    - Streaming Tools: school-infobot/streaming-tools.md
   - UMN Curriculum:
     - Background:
       - Foundations of Artificial Intelligence: umn-curriculum/background/foundations-of-ai.md
