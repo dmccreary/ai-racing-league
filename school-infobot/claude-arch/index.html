@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../streaming-tools/">
       
       
       <link rel="icon" href="../../img/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Claude Architecture - AI Racing League</title>
+        <title>Architecture - AI Racing League</title>
       
     
     
@@ -111,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Claude Architecture
+              Architecture
             
           </span>
         </div>
@@ -1321,17 +1325,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -1345,7 +1351,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             School Infobot
@@ -1363,7 +1369,7 @@
         
   
   <span class="md-ellipsis">
-    School Infobot
+    Introduction
   </span>
   
 
@@ -1377,18 +1383,178 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../claud-arch.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Architecture
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    None
+    Architecture
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tools-and-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools and Implementation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools and Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-speech-to-text-on-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Speech-to-Text (On Raspberry Pi):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-communication-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Communication Layer:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-llm-interface-gpu-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. LLM Interface (GPU Server):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-text-to-speech-gpu-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Text-to-Speech (GPU Server):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-streaming-audio-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      ### 1. Streaming Audio Processing:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-websocket-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. WebSocket Communication:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-asynchronous-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Asynchronous Design:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-library-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Library Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Library Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#on-the-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      On the Raspberry Pi:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-the-gpu-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      On the GPU Server:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-on-the-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code on the Pi
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1405,7 +1571,7 @@
         
   
   <span class="md-ellipsis">
-    School Infobot Streaming Tools
+    Streaming Tools
   </span>
   
 
@@ -3422,11 +3588,113 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tools-and-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools and Implementation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools and Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-speech-to-text-on-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Speech-to-Text (On Raspberry Pi):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-communication-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Communication Layer:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-llm-interface-gpu-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. LLM Interface (GPU Server):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-text-to-speech-gpu-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Text-to-Speech (GPU Server):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-streaming-audio-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      ### 1. Streaming Audio Processing:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-websocket-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. WebSocket Communication:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-asynchronous-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Asynchronous Design:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-library-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Library Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Library Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#on-the-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      On the Raspberry Pi:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#on-the-gpu-server" class="md-nav__link">
     <span class="md-ellipsis">
       On the GPU Server:
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3458,7 +3726,7 @@
 
 
 <h1 id="claude-architecture">Claude Architecture<a class="headerlink" href="#claude-architecture" title="Permanent link">&para;</a></h1>
-<p><img alt="" src="../architecture.png" /></p>
+<p><img alt="Architecture Diagram" src="../architecture.png" /></p>
 <div class="highlight"><pre><span></span><code>flowchart LR
     M[Microphone] --&gt;|Audio Stream| W[Whisper.cpp]
     W --&gt;|Text Stream| F[FastAPI Server]
@@ -3478,57 +3746,66 @@
         O
         C
     end
-    ```
+</code></pre></div>
+<h2 id="tools-and-implementation">Tools and Implementation<a class="headerlink" href="#tools-and-implementation" title="Permanent link">&para;</a></h2>
+<p>Here are the recommended tools and implementation approach:</p>
+<h3 id="1-speech-to-text-on-raspberry-pi">1.  <strong>Speech-to-Text (On Raspberry Pi)</strong>:<a class="headerlink" href="#1-speech-to-text-on-raspberry-pi" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use <code>whisper.cpp</code> for real-time speech recognition</li>
+<li>It's lightweight, optimized for ARM processors, and can run efficiently on Raspberry Pi</li>
+<li>Python bindings are available via <code>whisper-cpp-python</code></li>
+</ul>
+<h3 id="2-communication-layer">2.  <strong>Communication Layer</strong>:<a class="headerlink" href="#2-communication-layer" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="o">-</span><span class="w">   </span><span class="k">Use</span><span class="w"> </span><span class="n n-Quoted">`FastAPI`</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">WebSocket</span><span class="w"> </span><span class="n">support</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">bidirectional</span><span class="w"> </span><span class="n">streaming</span>
+<span class="o">-</span><span class="w">   </span><span class="n n-Quoted">`websockets`</span><span class="w"> </span><span class="n">library</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">Python</span><span class="w"> </span><span class="n">WebSocket</span><span class="w"> </span><span class="k">client</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Raspberry</span><span class="w"> </span><span class="n">Pi</span>
+<span class="o">-</span><span class="w">   </span><span class="n">This</span><span class="w"> </span><span class="n">enables</span><span class="w"> </span><span class="kt">real</span><span class="o">-</span><span class="kt">time</span><span class="w"> </span><span class="n">streaming</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="k">both</span><span class="w"> </span><span class="kt">text</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">audio</span>
+</code></pre></div></td></tr></table></div>
 
-## Tools and Implementation
+<h3 id="3-llm-interface-gpu-server">3.  <strong>LLM Interface (GPU Server)</strong>:<a class="headerlink" href="#3-llm-interface-gpu-server" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="o">-</span><span class="w">   </span><span class="nv">Use</span><span class="w"> </span><span class="nv">Ollama</span><span class="err">&#39;s Python SDK for streaming interface</span>
+<span class="err">-   Connect via WebSocket to enable streaming responses</span>
+</code></pre></div></td></tr></table></div>
 
-    Here are the recommended tools and implementation approach:
+<h3 id="4-text-to-speech-gpu-server">4.  <strong>Text-to-Speech (GPU Server)</strong>:<a class="headerlink" href="#4-text-to-speech-gpu-server" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="o">-</span><span class="w">   </span><span class="nv">Use</span><span class="w"> </span><span class="nv">Coqui</span><span class="w"> </span><span class="nv">TTS</span><span class="w"> </span><span class="ss">(</span><span class="nv">formerly</span><span class="w"> </span><span class="nv">Mozilla</span><span class="w"> </span><span class="nv">TTS</span><span class="ss">)</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">high</span><span class="o">-</span><span class="nv">quality</span><span class="w"> </span><span class="nv">speech</span><span class="w"> </span><span class="nv">synthesis</span>
+<span class="o">-</span><span class="w">   </span><span class="nv">It</span><span class="w"> </span><span class="nv">can</span><span class="w"> </span><span class="nv">run</span><span class="w"> </span><span class="nv">efficiently</span><span class="w"> </span><span class="nv">on</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">GPU</span>
+<span class="o">-</span><span class="w">   </span><span class="nv">Supports</span><span class="w"> </span><span class="nv">streaming</span><span class="w"> </span><span class="nv">audio</span><span class="w"> </span><span class="nv">output</span>
+</code></pre></div></td></tr></table></div>
 
-### 1.  **Speech-to-Text (On Raspberry Pi)**:
+<p>Key features of this implementation:</p>
+<h3 id="1-streaming-audio-processing">### 1.  <strong>Streaming Audio Processing</strong>:<a class="headerlink" href="#1-streaming-audio-processing" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="o">-</span><span class="w">   </span><span class="n">Uses</span><span class="w"> </span><span class="n n-Quoted">`sounddevice`</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="kt">real</span><span class="o">-</span><span class="kt">time</span><span class="w"> </span><span class="n">audio</span><span class="w"> </span><span class="n">capture</span>
+<span class="o">-</span><span class="w">   </span><span class="n">Processes</span><span class="w"> </span><span class="n">audio</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">chunks</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">immediate</span><span class="w"> </span><span class="n">response</span>
+<span class="o">-</span><span class="w">   </span><span class="n">Streams</span><span class="w"> </span><span class="k">both</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">output</span><span class="w"> </span><span class="n">audio</span>
+</code></pre></div></td></tr></table></div>
 
--   Use `whisper.cpp` for real-time speech recognition
--   It&#39;s lightweight, optimized for ARM processors, and can run efficiently on Raspberry Pi
--   Python bindings are available via `whisper-cpp-python`
+<h3 id="2-websocket-communication">2.  <strong>WebSocket Communication</strong>:<a class="headerlink" href="#2-websocket-communication" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="o">-</span><span class="w">   </span><span class="nv">Maintains</span><span class="w"> </span><span class="nv">persistent</span><span class="w"> </span><span class="nv">connection</span><span class="w"> </span><span class="nv">between</span><span class="w"> </span><span class="nv">Pi</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">GPU</span><span class="w"> </span><span class="nv">server</span>
+<span class="o">-</span><span class="w">   </span><span class="nv">Enables</span><span class="w"> </span><span class="nv">bidirectional</span><span class="w"> </span><span class="nv">streaming</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">text</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">audio</span>
+<span class="o">-</span><span class="w">   </span><span class="nv">Low</span><span class="w"> </span><span class="nv">latency</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">real</span><span class="o">-</span><span class="nv">time</span><span class="w"> </span><span class="nv">conversation</span>
+</code></pre></div></td></tr></table></div>
 
-### 2.  **Communication Layer**:
-    -   Use `FastAPI` with WebSocket support for bidirectional streaming
-    -   `websockets` library for Python WebSocket client on the Raspberry Pi
-    -   This enables real-time streaming of both text and audio
+<h3 id="3-asynchronous-design">3.  <strong>Asynchronous Design</strong>:<a class="headerlink" href="#3-asynchronous-design" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="o">-</span><span class="w">   </span><span class="n">Uses</span><span class="w"> </span><span class="n n-Quoted">`asyncio`</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">non</span><span class="o">-</span><span class="n">blocking</span><span class="w"> </span><span class="n">I</span><span class="o">/</span><span class="n">O</span>
+<span class="o">-</span><span class="w">   </span><span class="n">Handles</span><span class="w"> </span><span class="n">multiple</span><span class="w"> </span><span class="k">concurrent</span><span class="w"> </span><span class="n">operations</span><span class="w"> </span><span class="n">efficiently</span>
+<span class="o">-</span><span class="w">   </span><span class="n">Maintains</span><span class="w"> </span><span class="n">responsive</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="n">experience</span>
+</code></pre></div></td></tr></table></div>
 
-### 3.  **LLM Interface (GPU Server)**:
-    -   Use Ollama&#39;s Python SDK for streaming interface
-    -   Connect via WebSocket to enable streaming responses
-
-### 4.  **Text-to-Speech (GPU Server)**:
-    -   Use Coqui TTS (formerly Mozilla TTS) for high-quality speech synthesis
-    -   It can run efficiently on the GPU
-    -   Supports streaming audio output
-
-Key features of this implementation:
-
-### ### 1.  **Streaming Audio Processing**:
-    -   Uses `sounddevice` for real-time audio capture
-    -   Processes audio in chunks for immediate response
-    -   Streams both input and output audio
-
-### 2.  **WebSocket Communication**:
-    -   Maintains persistent connection between Pi and GPU server
-    -   Enables bidirectional streaming of text and audio
-    -   Low latency for real-time conversation
-
-### 3.  **Asynchronous Design**:
-    -   Uses `asyncio` for non-blocking I/O
-    -   Handles multiple concurrent operations efficiently
-    -   Maintains responsive user experience
-
-## Python Library Installation
-
-To implement this system:
-
-### On the Raspberry Pi:
-
-```sh
-pip install whisper-cpp-python websockets sounddevice numpy
+<h2 id="python-library-installation">Python Library Installation<a class="headerlink" href="#python-library-installation" title="Permanent link">&para;</a></h2>
+<p>To implement this system:</p>
+<h3 id="on-the-raspberry-pi">On the Raspberry Pi:<a class="headerlink" href="#on-the-raspberry-pi" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>whisper-cpp-python<span class="w"> </span>websockets<span class="w"> </span>sounddevice<span class="w"> </span>numpy
 </code></pre></div>
 <h3 id="on-the-gpu-server">On the GPU Server:<a class="headerlink" href="#on-the-gpu-server" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>fastapi<span class="w"> </span>uvicorn<span class="w"> </span>TTS<span class="w"> </span>ollama<span class="w"> </span>websockets
@@ -3601,6 +3878,41 @@ pip install whisper-cpp-python websockets sounddevice numpy
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../streaming-tools/" title="Streaming Tools" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Streaming Tools
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
