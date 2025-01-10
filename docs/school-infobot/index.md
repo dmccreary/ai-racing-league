@@ -1,5 +1,7 @@
 # School Infobot
 
+![School Infobot](./school-infobot.png)
+
 A school infobot is a battery powered robot that wonders
 the halls of a school answering questions for students
 such as "Are there any coding clubs in this school?".
@@ -16,3 +18,10 @@ from the schools website with additional data in the
 history of the school, staff and current calendar all
 pulled from the school's website.
 
+## Architecture
+
+[Claud Recommended Architecture](./claude-arch.md)
+
+## Streaming Tools
+
+[Streaming Tools](streaming-tools.md)

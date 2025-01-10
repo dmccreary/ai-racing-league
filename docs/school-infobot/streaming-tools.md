@@ -3,16 +3,17 @@
 ## Prompt
 
 !!! prompt
-     would like to build a mobile robot that will wonder the halls of schools and be able to interact with students via voice.  We have a brand new Raspberry Pi with an AI Hat that can do model inference faster than before.  The Raspberry Pi has a high-quality 360-degree mic and speakers.  We also have a wireless connection to a school's GPU which is a NVIDIA GTX 3080Ti with 12GB of  RAM.  It is running Ollama now.  Our team has a preference for Python.
+     We are a group of software engineers that would like to get high-school
+     students exposed to AI and LLMs.  We would like to build a mobile robot that will wonder the halls of schools and be able to interact with students via voice.  We have a brand new Raspberry Pi with an AI Hat that can do model inference faster than before.  The Raspberry Pi has a high-quality 360-degree mic and speakers.  We also have a wireless connection to a school's GPU which is a NVIDIA GTX 3080Ti with 12GB of  RAM.  It is running Ollama now.  Our team has a preference for Python.
 
-Here are the goals of the project:
+    Here are the goals of the project:
 
-1. The robot will "listed" to a student and convert their speech to text.
-2. Text will be sent to the GPU running Ollama/Llama 3.3 which has a systems prompt that only allows it to answer questions about the school.
-3. The text comes out of Ollama/Llama 3.3 and must be converted to speech.
-4. The speech is sent back to the Robot and it is played to the speaker.
+    1. The robot will "listed" to a student and convert their speech to text.
+    2. Text will be sent to the GPU running Ollama/Llama 3.3 which has a systems prompt that only allows it to answer questions about the school.
+    3. The text comes out of Ollama/Llama 3.3 and must be converted to speech.
+    4. The speech is sent back to the Robot and it is played to the speaker.
 
-What tools should I use to connect all these components together with a streaming interface?
+    What tools should I use to connect all these components together with a streaming interface?
 
 ## Response
 
@@ -221,3 +222,31 @@ This architecture ensures minimal latency because everything is happening in a s
     -   Or a ROS 2 approach if you need deep robotics integration.
 
 With these pieces in place, you'll have a real-time pipeline where the Raspberry Pi captures audio, converts it to text, sends the text to Llama on the GPU, receives back a streaming text response, converts that response to speech, and plays it back to the student.
+
+## Workflow
+
+ChatGPT thought about it for 17 seconds.
+
+**Creating the interaction experience**
+
+I'm designing a pipeline for a mobile robot: speech to text on Raspberry Pi, text transformation for Ollama, and text to speech. Streaming interface options include WebSocket, gRPC, GStreamer, and ffmpeg for real-time audio transmission.
+
+**Evaluating options**
+
+I'm weighing Vosk, Google's TTS, Coqui TTS, espeak, NVIDIA's Riva, and cloud solutions for streaming STT to the GPU with Ollama. The Raspberry Pi's roles in audio capture and local or GPU-based processing are also considered.
+
+**Crafting the strategy**
+
+I'm mapping out the pipeline: real-time audio capture on Raspberry Pi, streaming STT to GPU with Ollama, and streaming text to speech for playback. WebSockets or gRPC are solutions I'm considering for data exchange.
+
+**Mapping data flow**
+
+I'm integrating the Raspberry Pi with PyAudio for mic audio, using a speech recognition service, and streaming text to the GPU server for Ollama's text generation, followed by TTS on the Pi or GPU.
+
+**Integrating tools**
+
+I'm pulling together GStreamer, WebSockets, gRPC, Docker, and containerization for streaming audio from the GPU server to the Raspberry Pi, ensuring smooth playback.
+
+**Integrating solutions**
+
+I'm steering towards using PyAudio or SoX for audio capture, streaming STT via Vosk or Google Speech, and passing text to Ollama through REST or WebSocket. For TTS, exploring eSpeak, gTTS, or Coqui TTS.

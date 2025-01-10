@@ -59,6 +59,10 @@ nav:
     - Driving Your Donkey Car and Collecting Data: umn-curriculum/driving.md
     - Training: umn-curriculum/training.md
     - Autopilot: umn-curriculum/autopilot.md
+    - School Infobot:
+      - school-infobot/index.md
+      - school-infobot/claud-arch.md
+      - school-infobot/streaming-tools.md
     - Appendix:
       - Developer Install: umn-curriculum/appendix/developer-install.md
       - Trimming Data Tubs: umn-curriculum/appendix/trimming-data.md
