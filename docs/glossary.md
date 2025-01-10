@@ -81,6 +81,14 @@ An electronic circuit that controls and regulates the speed of an electric motor
 #### Fifteen Degree Camera Angle
 The angle our cameras need to point down to have a good view of the road ahead.
 
+
+
+#### Ollama
+
+A large-language model trained to answer questions in a chatbot-style interface.
+Ollama is unique in that is has versions that are highly compressed so they
+can run on a schools GPU with 12GB RAM.  This can be purchased for under $2,000.
+
 #### Normalized
 
 Values that have been converted into a standard that can be used across many situations.
