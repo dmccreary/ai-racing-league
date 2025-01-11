@@ -39,3 +39,9 @@ Jetson Nano References
 * [Real time optimal control of an autonomous RC car with minimum-time maneuvers](https://www.youtube.com/watch?v=HADLEr5eTj0) - nice video of optimization of driving algorithm using a "U" shaped track.
 * [Sparkfun Autonomous Vehicle Race from 2016](https://www.youtube.com/watch?v=NBr71Dww_-k)
 * [Ed Murphy on Maker Faire](https://www.youtube.com/watch?v=cKhrV_RYVOw)
+
+## Sunfounder PiCar
+
+[Brennan Neuser's PiCar Site](https://github.com/Noise859/PicarPilot)
+
+This is a much smaller car that has a small turning radius built around the SunFounder AI PiCar kit.  The software was modified by [Brennan Neuser](https://www.linkedin.com/in/brennan-neuser-8a1a211b9/) and the hardware was purchased by [Sharat Bhatra](https://www.linkedin.com/in/sharatbatra/)
