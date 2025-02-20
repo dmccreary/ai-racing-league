@@ -2,7 +2,7 @@
 
 # Visit The Official AI:RL Site
 
-[https://coderdojotc.github.io/ai-racing-league](https://coderdojotc.github.io/ai-racing-league)
+[https://dmccreary.github.io/ai-racing-league](https://coderdojotc.github.io/ai-racing-league)
 
 ## About
 This repository is for a the *AI Racing League* - A fun way to learn AI using the Raspberry Pi, Python, DeepLearning and RC-cars.  

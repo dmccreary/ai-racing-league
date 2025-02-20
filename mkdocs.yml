@@ -1,4 +1,9 @@
 site_name: 'AI Racing League'
+site_description: 'AI Racing League Documentation using mkdocs with the Material theme.'
+site_author: 'Dan McCreary'
+repo_url: 'https://github.com/dmccreary/ai-racing-league'
+site_url: 'https://dmccreary.github.io/ai-racing-league'
+
 nav:
   - Home: index.md
   - About:
@@ -128,7 +133,7 @@ nav:
   - FAQs: faqs.md
   - Glossary: glossary.md
   - Resources: resources.md
-repo_url: 'https://github.com/CoderDojoTC/ai-racing-league'
+
 
 # Standard Stuff
 repo_name: 'Link to GitHub'
@@ -144,6 +149,7 @@ theme:
   include_sidebar: true
 markdown_extensions:
   - admonition
+  - html_in_md
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
