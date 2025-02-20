@@ -1,0 +1,3740 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI Racing League Documentation using mkdocs with the Material theme.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/ai-racing-league/training-logs/msp-car-1/">
+      
+      
+        <link rel="prev" href="../../admin/joystick/">
+      
+      
+        <link rel="next" href="../msp-car-2/">
+      
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>MSP Car 1 - AI Racing League</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-RL4MZ0MHZ4"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-RL4MZ0MHZ4",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-RL4MZ0MHZ4",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#minnesota-stem-partners-car-1-training-log" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Racing League" class="md-header__button md-logo" aria-label="AI Racing League" data-md-component="logo">
+      
+  <img src="../../img/car-small.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Racing League
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MSP Car 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/ai-racing-league" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Link to GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Racing League" class="md-nav__button md-logo" aria-label="AI Racing League" data-md-component="logo">
+      
+  <img src="../../img/car-small.png" alt="logo">
+
+    </a>
+    AI Racing League
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/ai-racing-league" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Link to GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About at ARL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-plan-2020/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Business Plan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contacts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contacts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Curriculum
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Curriculum
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learning Strategy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../curriculum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Curriculum Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../six-week-curriculum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sample Six Week Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../college-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sample Collage Project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lesson Plans
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Lesson Plans
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/github/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GitHub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/car-structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Car Structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/software-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/calibration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calibration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/car-structure/joystick/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using the Joystick
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/gathering-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gathering Image Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/building-a-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Building a Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/driving-with-a-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Driving With a Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/tuning-performance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tuning Performance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/gpu-config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_12" id="__nav_3_5_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Computer Vision Labs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_12">
+            <span class="md-nav__icon md-icon"></span>
+            Computer Vision Labs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/computer-vision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/computer-vision/open-cv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Computer Vision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/computer-vision/face-filters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Face Filters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/jupyter-notebooks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupyter Notebooks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_14" id="__nav_3_5_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Car Data Analysis
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_14">
+            <span class="md-nav__icon md-icon"></span>
+            Car Data Analysis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/01-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro Part 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/02-listing-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Listing Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/03-viewing-images/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Viewing Images
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/04-viewing-catalog-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Viewing Catalog Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/05-catalog-statistics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Catalog Statistics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/06-cleaning-datasets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cleaning Datasets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-analysis/06-data-distributions.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Distributions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lessons/object-detection/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Object Detection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Generative AI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Generative AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/car-structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Car Structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sample Quizzes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Sample Quizzes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quizzes/gpu-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proposal Generator
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Proposal Generator
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposal-generator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposal-generator/proposal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sample Proposal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UMN Curriculum
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            UMN Curriculum
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Background
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Background
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/background/foundations-of-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Foundations of Artificial Intelligence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/background/introduction-to-nn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Neural Networks in Machine Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/background/introduction-to-os/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Operating Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/background/introduction-to-linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/background/introduction-to-networking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Networking and Wi-Fi Hotspot Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/background/introduction-to-python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/donkey-car/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Familiar with Donkey Car
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/raspberry-pi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started with Raspberry Pi OS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/networking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting Up and Calibrating Your Donkey Car
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/driving/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Driving Your Donkey Car and Collecting Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/training/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Training
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/autopilot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Autopilot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Appendix
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/appendix/developer-install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Developer Install
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/appendix/trimming-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trimming Data Tubs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/appendix/training-config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Training Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/appendix/troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/appendix/vsc-remote/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VS Code Remote
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../umn-curriculum/attribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Attribution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/track-options/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Track Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/battery-options/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Battery Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/microSD-write-speed/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MicroSD Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/camera-testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Camera Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/gpu-options/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/car-box-checklist/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Car Checklist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/building-arl-image/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Building ARL Image
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/calibrate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calibrate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/donkey-cmd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Donkey Command
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/conda-pi-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Conda on Pi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/pre-drive-checklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-Drive Checklist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/pwm-board/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PWM Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/raspberry-pi-parts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Raspberry Pi Parts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/nano-docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nano Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/nano-sd-image-checklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nano SD Image Checklist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/software-install-notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software Installation Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/nano-python-upgrade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nano Upgrade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/installation-tips/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation Tips
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/clone-sd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clone an SD Card
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/tools.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GPU Server Setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            GPU Server Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/nvidia-driver-install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NVIDIA Driver Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/gpu-shell/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Shell Commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/tensorflow-gpu-install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tensorflow GPU Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Team Administration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Team Administration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/01-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/02-sd-image/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Club Images
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/03-purchasing-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Purchasing Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/04-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/car-parts-list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cars Parts List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/gpu-parts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Parts List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/joystick/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Joystick
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Training Logs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Training Logs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    MSP Car 1
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../msp-car-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MSP Car 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dans-basement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dan's Basement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Events
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Events
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/hardware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/unix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unix Shell Table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/computer-vision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computer Vision Table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/jupyter-notebooks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupyter Notebooks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/gpu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Misc
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hackathon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hackathon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../demo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Demos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Media
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../command-line-tips/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Command Line Tips
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../google-analytics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Google Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quizzes/gpu-shell-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Shell Command Quiz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Presentations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Presentations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../presentations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List of Presentations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slides/Welcome-to-the-ARL.pptx" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slides/Command-Reference-Card.pptx" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Command Reference Card
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slides/AI-Racing-League-Code-Savvy.pptx" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Savvy Slides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slides/Connecting-PWM-Cards.pptx" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connecting PWM Cards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-assisted-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Assisted Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="minnesota-stem-partners-car-1-training-log">Minnesota STEM Partners Car 1 Training Log<a class="headerlink" href="#minnesota-stem-partners-car-1-training-log" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code>time donkey train --tub=./data/msp-car-1 --model=./models/msp-car-1.h5
+________             ______                   _________              
+___  __ \_______________  /___________  __    __  ____/_____ ________
+__  / / /  __ \_  __ \_  //_/  _ \_  / / /    _  /    _  __ `/_  ___/
+_  /_/ // /_/ /  / / /  ,&lt;  /  __/  /_/ /     / /___  / /_/ /_  /    
+/_____/ \____//_/ /_//_/|_| \___/_\__, /      \____/  \__,_/ /_/     
+                                 /____/                              
+
+using donkey v4.2.1 ...
+loading config file: ./config.py
+loading personal config over-rides from myconfig.py
+&quot;get_model_by_type&quot; model Type is: linear
+Created KerasLinear
+2021-07-26 21:18:57.390998: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-07-26 21:18:57.409838: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-07-26 21:18:57.410285: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:09:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.635GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-07-26 21:18:57.410424: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-07-26 21:18:57.411314: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-07-26 21:18:57.412358: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-07-26 21:18:57.412506: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-07-26 21:18:57.413323: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-07-26 21:18:57.413712: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-07-26 21:18:57.415437: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-07-26 21:18:57.415619: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-07-26 21:18:57.416133: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-07-26 21:18:57.416523: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-07-26 21:18:57.416750: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-07-26 21:18:57.420820: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 3592950000 Hz
+2021-07-26 21:18:57.421125: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5629cbee7970 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-07-26 21:18:57.421136: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-07-26 21:18:57.421270: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-07-26 21:18:57.421679: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:09:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.635GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-07-26 21:18:57.421712: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-07-26 21:18:57.421724: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-07-26 21:18:57.421735: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-07-26 21:18:57.421746: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-07-26 21:18:57.421756: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-07-26 21:18:57.421766: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-07-26 21:18:57.421776: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-07-26 21:18:57.421840: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-07-26 21:18:57.422285: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-07-26 21:18:57.422675: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-07-26 21:18:57.422700: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-07-26 21:18:57.504507: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-26 21:18:57.504534: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-07-26 21:18:57.504541: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2021-07-26 21:18:57.504754: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-07-26 21:18:57.505207: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-07-26 21:18:57.505632: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-07-26 21:18:57.506019: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9892 MB memory) -&gt; physical GPU (device: 0, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:09:00.0, compute capability: 7.5)
+2021-07-26 21:18:57.507379: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5629cdd66f30 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-07-26 21:18:57.507389: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce RTX 2080 Ti, Compute Capability 7.5
+Model: &quot;model&quot;
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+img_in (InputLayer)             [(None, 224, 224, 3) 0                                            
+__________________________________________________________________________________________________
+conv2d_1 (Conv2D)               (None, 110, 110, 24) 1824        img_in[0][0]                     
+__________________________________________________________________________________________________
+dropout (Dropout)               (None, 110, 110, 24) 0           conv2d_1[0][0]                   
+__________________________________________________________________________________________________
+conv2d_2 (Conv2D)               (None, 53, 53, 32)   19232       dropout[0][0]                    
+__________________________________________________________________________________________________
+dropout_1 (Dropout)             (None, 53, 53, 32)   0           conv2d_2[0][0]                   
+__________________________________________________________________________________________________
+conv2d_3 (Conv2D)               (None, 25, 25, 64)   51264       dropout_1[0][0]                  
+__________________________________________________________________________________________________
+dropout_2 (Dropout)             (None, 25, 25, 64)   0           conv2d_3[0][0]                   
+__________________________________________________________________________________________________
+conv2d_4 (Conv2D)               (None, 23, 23, 64)   36928       dropout_2[0][0]                  
+__________________________________________________________________________________________________
+dropout_3 (Dropout)             (None, 23, 23, 64)   0           conv2d_4[0][0]                   
+__________________________________________________________________________________________________
+conv2d_5 (Conv2D)               (None, 21, 21, 64)   36928       dropout_3[0][0]                  
+__________________________________________________________________________________________________
+dropout_4 (Dropout)             (None, 21, 21, 64)   0           conv2d_5[0][0]                   
+__________________________________________________________________________________________________
+flattened (Flatten)             (None, 28224)        0           dropout_4[0][0]                  
+__________________________________________________________________________________________________
+dense_1 (Dense)                 (None, 100)          2822500     flattened[0][0]                  
+__________________________________________________________________________________________________
+dropout_5 (Dropout)             (None, 100)          0           dense_1[0][0]                    
+__________________________________________________________________________________________________
+dense_2 (Dense)                 (None, 50)           5050        dropout_5[0][0]                  
+__________________________________________________________________________________________________
+dropout_6 (Dropout)             (None, 50)           0           dense_2[0][0]                    
+__________________________________________________________________________________________________
+n_outputs0 (Dense)              (None, 1)            51          dropout_6[0][0]                  
+__________________________________________________________________________________________________
+n_outputs1 (Dense)              (None, 1)            51          dropout_6[0][0]                  
+==================================================================================================
+Total params: 2,973,828
+Trainable params: 2,973,828
+Non-trainable params: 0
+__________________________________________________________________________________________________
+None
+Using catalog /home/arl/mycar/data/msp-car-1/catalog_17.catalog
+
+Records # Training 1265
+Records # Validation 317
+Epoch 1/100
+2021-07-26 21:18:58.397797: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-07-26 21:18:58.705078: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-07-26 21:18:59.429125: W tensorflow/stream_executor/gpu/asm_compiler.cc:116] *** WARNING *** You are using ptxas 9.1.108, which is older than 9.2.88. ptxas 9.x before 9.2.88 is known to miscompile XLA code, leading to incorrect results or invalid-address errors.
+
+You do not need to update to CUDA 9.2.88; cherry-picking the ptxas binary is sufficient.
+2021-07-26 21:18:59.481809: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 65280, output: ptxas fatal   : Value &#39;sm_75&#39; is not defined for option &#39;gpu-name&#39;
+
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+10/10 [==============================] - ETA: 0s - loss: 0.6674 - n_outputs0_loss: 0.5162 - n_outputs1_loss: 0.1512
+Epoch 00001: val_loss improved from inf to 0.60297, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 3s 288ms/step - loss: 0.6674 - n_outputs0_loss: 0.5162 - n_outputs1_loss: 0.1512 - val_loss: 0.6030 - val_n_outputs0_loss: 0.4514 - val_n_outputs1_loss: 0.1516
+Epoch 2/100
+10/10 [==============================] - ETA: 0s - loss: 0.6050 - n_outputs0_loss: 0.5074 - n_outputs1_loss: 0.0976
+Epoch 00002: val_loss improved from 0.60297 to 0.51595, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 124ms/step - loss: 0.6050 - n_outputs0_loss: 0.5074 - n_outputs1_loss: 0.0976 - val_loss: 0.5160 - val_n_outputs0_loss: 0.4188 - val_n_outputs1_loss: 0.0972
+Epoch 3/100
+10/10 [==============================] - ETA: 0s - loss: 0.5707 - n_outputs0_loss: 0.4923 - n_outputs1_loss: 0.0784
+Epoch 00003: val_loss improved from 0.51595 to 0.50280, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 110ms/step - loss: 0.5707 - n_outputs0_loss: 0.4923 - n_outputs1_loss: 0.0784 - val_loss: 0.5028 - val_n_outputs0_loss: 0.4224 - val_n_outputs1_loss: 0.0804
+Epoch 4/100
+10/10 [==============================] - ETA: 0s - loss: 0.5615 - n_outputs0_loss: 0.4917 - n_outputs1_loss: 0.0698
+Epoch 00004: val_loss improved from 0.50280 to 0.49159, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 110ms/step - loss: 0.5615 - n_outputs0_loss: 0.4917 - n_outputs1_loss: 0.0698 - val_loss: 0.4916 - val_n_outputs0_loss: 0.4203 - val_n_outputs1_loss: 0.0713
+Epoch 5/100
+10/10 [==============================] - ETA: 0s - loss: 0.5541 - n_outputs0_loss: 0.4854 - n_outputs1_loss: 0.0687
+Epoch 00005: val_loss improved from 0.49159 to 0.48784, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 104ms/step - loss: 0.5541 - n_outputs0_loss: 0.4854 - n_outputs1_loss: 0.0687 - val_loss: 0.4878 - val_n_outputs0_loss: 0.4107 - val_n_outputs1_loss: 0.0772
+Epoch 6/100
+10/10 [==============================] - ETA: 0s - loss: 0.5527 - n_outputs0_loss: 0.4827 - n_outputs1_loss: 0.0701
+Epoch 00006: val_loss improved from 0.48784 to 0.48521, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 109ms/step - loss: 0.5527 - n_outputs0_loss: 0.4827 - n_outputs1_loss: 0.0701 - val_loss: 0.4852 - val_n_outputs0_loss: 0.4127 - val_n_outputs1_loss: 0.0725
+Epoch 7/100
+10/10 [==============================] - ETA: 0s - loss: 0.5405 - n_outputs0_loss: 0.4764 - n_outputs1_loss: 0.0641
+Epoch 00007: val_loss improved from 0.48521 to 0.48270, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 110ms/step - loss: 0.5405 - n_outputs0_loss: 0.4764 - n_outputs1_loss: 0.0641 - val_loss: 0.4827 - val_n_outputs0_loss: 0.4097 - val_n_outputs1_loss: 0.0730
+Epoch 8/100
+10/10 [==============================] - ETA: 0s - loss: 0.5383 - n_outputs0_loss: 0.4724 - n_outputs1_loss: 0.0659
+Epoch 00008: val_loss improved from 0.48270 to 0.47415, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 109ms/step - loss: 0.5383 - n_outputs0_loss: 0.4724 - n_outputs1_loss: 0.0659 - val_loss: 0.4741 - val_n_outputs0_loss: 0.4026 - val_n_outputs1_loss: 0.0715
+Epoch 9/100
+10/10 [==============================] - ETA: 0s - loss: 0.5288 - n_outputs0_loss: 0.4640 - n_outputs1_loss: 0.0648
+Epoch 00009: val_loss did not improve from 0.47415
+10/10 [==============================] - 1s 101ms/step - loss: 0.5288 - n_outputs0_loss: 0.4640 - n_outputs1_loss: 0.0648 - val_loss: 0.4780 - val_n_outputs0_loss: 0.4069 - val_n_outputs1_loss: 0.0711
+Epoch 10/100
+10/10 [==============================] - ETA: 0s - loss: 0.5344 - n_outputs0_loss: 0.4677 - n_outputs1_loss: 0.0667
+Epoch 00010: val_loss improved from 0.47415 to 0.45939, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 111ms/step - loss: 0.5344 - n_outputs0_loss: 0.4677 - n_outputs1_loss: 0.0667 - val_loss: 0.4594 - val_n_outputs0_loss: 0.3903 - val_n_outputs1_loss: 0.0691
+Epoch 11/100
+10/10 [==============================] - ETA: 0s - loss: 0.5014 - n_outputs0_loss: 0.4349 - n_outputs1_loss: 0.0666
+Epoch 00011: val_loss improved from 0.45939 to 0.44304, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 112ms/step - loss: 0.5014 - n_outputs0_loss: 0.4349 - n_outputs1_loss: 0.0666 - val_loss: 0.4430 - val_n_outputs0_loss: 0.3672 - val_n_outputs1_loss: 0.0758
+Epoch 12/100
+10/10 [==============================] - ETA: 0s - loss: 0.4585 - n_outputs0_loss: 0.3847 - n_outputs1_loss: 0.0738
+Epoch 00012: val_loss improved from 0.44304 to 0.36563, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 109ms/step - loss: 0.4585 - n_outputs0_loss: 0.3847 - n_outputs1_loss: 0.0738 - val_loss: 0.3656 - val_n_outputs0_loss: 0.2934 - val_n_outputs1_loss: 0.0723
+Epoch 13/100
+10/10 [==============================] - ETA: 0s - loss: 0.3922 - n_outputs0_loss: 0.3257 - n_outputs1_loss: 0.0664
+Epoch 00013: val_loss improved from 0.36563 to 0.30773, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 111ms/step - loss: 0.3922 - n_outputs0_loss: 0.3257 - n_outputs1_loss: 0.0664 - val_loss: 0.3077 - val_n_outputs0_loss: 0.2463 - val_n_outputs1_loss: 0.0614
+Epoch 14/100
+10/10 [==============================] - ETA: 0s - loss: 0.3662 - n_outputs0_loss: 0.3052 - n_outputs1_loss: 0.0610
+Epoch 00014: val_loss improved from 0.30773 to 0.27574, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 107ms/step - loss: 0.3662 - n_outputs0_loss: 0.3052 - n_outputs1_loss: 0.0610 - val_loss: 0.2757 - val_n_outputs0_loss: 0.2294 - val_n_outputs1_loss: 0.0463
+Epoch 15/100
+10/10 [==============================] - ETA: 0s - loss: 0.3233 - n_outputs0_loss: 0.2626 - n_outputs1_loss: 0.0607
+Epoch 00015: val_loss improved from 0.27574 to 0.24205, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 110ms/step - loss: 0.3233 - n_outputs0_loss: 0.2626 - n_outputs1_loss: 0.0607 - val_loss: 0.2421 - val_n_outputs0_loss: 0.1966 - val_n_outputs1_loss: 0.0454
+Epoch 16/100
+10/10 [==============================] - ETA: 0s - loss: 0.3078 - n_outputs0_loss: 0.2500 - n_outputs1_loss: 0.0577
+Epoch 00016: val_loss did not improve from 0.24205
+10/10 [==============================] - 1s 100ms/step - loss: 0.3078 - n_outputs0_loss: 0.2500 - n_outputs1_loss: 0.0577 - val_loss: 0.2473 - val_n_outputs0_loss: 0.2023 - val_n_outputs1_loss: 0.0450
+Epoch 17/100
+10/10 [==============================] - ETA: 0s - loss: 0.2959 - n_outputs0_loss: 0.2404 - n_outputs1_loss: 0.0555
+Epoch 00017: val_loss improved from 0.24205 to 0.22809, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 113ms/step - loss: 0.2959 - n_outputs0_loss: 0.2404 - n_outputs1_loss: 0.0555 - val_loss: 0.2281 - val_n_outputs0_loss: 0.1842 - val_n_outputs1_loss: 0.0438
+Epoch 18/100
+10/10 [==============================] - ETA: 0s - loss: 0.2820 - n_outputs0_loss: 0.2280 - n_outputs1_loss: 0.0540
+Epoch 00018: val_loss improved from 0.22809 to 0.21671, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 107ms/step - loss: 0.2820 - n_outputs0_loss: 0.2280 - n_outputs1_loss: 0.0540 - val_loss: 0.2167 - val_n_outputs0_loss: 0.1768 - val_n_outputs1_loss: 0.0400
+Epoch 19/100
+10/10 [==============================] - ETA: 0s - loss: 0.2568 - n_outputs0_loss: 0.2044 - n_outputs1_loss: 0.0524
+Epoch 00019: val_loss did not improve from 0.21671
+10/10 [==============================] - 1s 99ms/step - loss: 0.2568 - n_outputs0_loss: 0.2044 - n_outputs1_loss: 0.0524 - val_loss: 0.2190 - val_n_outputs0_loss: 0.1788 - val_n_outputs1_loss: 0.0402
+Epoch 20/100
+10/10 [==============================] - ETA: 0s - loss: 0.2621 - n_outputs0_loss: 0.2123 - n_outputs1_loss: 0.0499
+Epoch 00020: val_loss improved from 0.21671 to 0.21046, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 113ms/step - loss: 0.2621 - n_outputs0_loss: 0.2123 - n_outputs1_loss: 0.0499 - val_loss: 0.2105 - val_n_outputs0_loss: 0.1718 - val_n_outputs1_loss: 0.0386
+Epoch 21/100
+10/10 [==============================] - ETA: 0s - loss: 0.2521 - n_outputs0_loss: 0.2052 - n_outputs1_loss: 0.0469
+Epoch 00021: val_loss improved from 0.21046 to 0.20605, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 111ms/step - loss: 0.2521 - n_outputs0_loss: 0.2052 - n_outputs1_loss: 0.0469 - val_loss: 0.2060 - val_n_outputs0_loss: 0.1675 - val_n_outputs1_loss: 0.0385
+Epoch 22/100
+10/10 [==============================] - ETA: 0s - loss: 0.2261 - n_outputs0_loss: 0.1781 - n_outputs1_loss: 0.0480
+Epoch 00022: val_loss improved from 0.20605 to 0.20553, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 106ms/step - loss: 0.2261 - n_outputs0_loss: 0.1781 - n_outputs1_loss: 0.0480 - val_loss: 0.2055 - val_n_outputs0_loss: 0.1711 - val_n_outputs1_loss: 0.0344
+Epoch 23/100
+10/10 [==============================] - ETA: 0s - loss: 0.2222 - n_outputs0_loss: 0.1794 - n_outputs1_loss: 0.0429
+Epoch 00023: val_loss improved from 0.20553 to 0.20273, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 109ms/step - loss: 0.2222 - n_outputs0_loss: 0.1794 - n_outputs1_loss: 0.0429 - val_loss: 0.2027 - val_n_outputs0_loss: 0.1697 - val_n_outputs1_loss: 0.0331
+Epoch 24/100
+10/10 [==============================] - ETA: 0s - loss: 0.2126 - n_outputs0_loss: 0.1698 - n_outputs1_loss: 0.0428
+Epoch 00024: val_loss improved from 0.20273 to 0.19049, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 105ms/step - loss: 0.2126 - n_outputs0_loss: 0.1698 - n_outputs1_loss: 0.0428 - val_loss: 0.1905 - val_n_outputs0_loss: 0.1562 - val_n_outputs1_loss: 0.0343
+Epoch 25/100
+10/10 [==============================] - ETA: 0s - loss: 0.2062 - n_outputs0_loss: 0.1658 - n_outputs1_loss: 0.0404
+Epoch 00025: val_loss improved from 0.19049 to 0.18404, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 109ms/step - loss: 0.2062 - n_outputs0_loss: 0.1658 - n_outputs1_loss: 0.0404 - val_loss: 0.1840 - val_n_outputs0_loss: 0.1488 - val_n_outputs1_loss: 0.0352
+Epoch 26/100
+10/10 [==============================] - ETA: 0s - loss: 0.1928 - n_outputs0_loss: 0.1555 - n_outputs1_loss: 0.0372
+Epoch 00026: val_loss did not improve from 0.18404
+10/10 [==============================] - 1s 102ms/step - loss: 0.1928 - n_outputs0_loss: 0.1555 - n_outputs1_loss: 0.0372 - val_loss: 0.1907 - val_n_outputs0_loss: 0.1563 - val_n_outputs1_loss: 0.0344
+Epoch 27/100
+10/10 [==============================] - ETA: 0s - loss: 0.1834 - n_outputs0_loss: 0.1428 - n_outputs1_loss: 0.0406
+Epoch 00027: val_loss did not improve from 0.18404
+10/10 [==============================] - 1s 103ms/step - loss: 0.1834 - n_outputs0_loss: 0.1428 - n_outputs1_loss: 0.0406 - val_loss: 0.1922 - val_n_outputs0_loss: 0.1527 - val_n_outputs1_loss: 0.0396
+Epoch 28/100
+10/10 [==============================] - ETA: 0s - loss: 0.1668 - n_outputs0_loss: 0.1282 - n_outputs1_loss: 0.0386
+Epoch 00028: val_loss improved from 0.18404 to 0.17462, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 113ms/step - loss: 0.1668 - n_outputs0_loss: 0.1282 - n_outputs1_loss: 0.0386 - val_loss: 0.1746 - val_n_outputs0_loss: 0.1436 - val_n_outputs1_loss: 0.0311
+Epoch 29/100
+10/10 [==============================] - ETA: 0s - loss: 0.1654 - n_outputs0_loss: 0.1282 - n_outputs1_loss: 0.0372
+Epoch 00029: val_loss improved from 0.17462 to 0.17365, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 107ms/step - loss: 0.1654 - n_outputs0_loss: 0.1282 - n_outputs1_loss: 0.0372 - val_loss: 0.1736 - val_n_outputs0_loss: 0.1432 - val_n_outputs1_loss: 0.0305
+Epoch 30/100
+10/10 [==============================] - ETA: 0s - loss: 0.1615 - n_outputs0_loss: 0.1250 - n_outputs1_loss: 0.0364
+Epoch 00030: val_loss did not improve from 0.17365
+10/10 [==============================] - 1s 96ms/step - loss: 0.1615 - n_outputs0_loss: 0.1250 - n_outputs1_loss: 0.0364 - val_loss: 0.1799 - val_n_outputs0_loss: 0.1493 - val_n_outputs1_loss: 0.0306
+Epoch 31/100
+10/10 [==============================] - ETA: 0s - loss: 0.1495 - n_outputs0_loss: 0.1162 - n_outputs1_loss: 0.0332
+Epoch 00031: val_loss improved from 0.17365 to 0.17255, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 112ms/step - loss: 0.1495 - n_outputs0_loss: 0.1162 - n_outputs1_loss: 0.0332 - val_loss: 0.1726 - val_n_outputs0_loss: 0.1383 - val_n_outputs1_loss: 0.0342
+Epoch 32/100
+10/10 [==============================] - ETA: 0s - loss: 0.1453 - n_outputs0_loss: 0.1121 - n_outputs1_loss: 0.0333
+Epoch 00032: val_loss did not improve from 0.17255
+10/10 [==============================] - 1s 104ms/step - loss: 0.1453 - n_outputs0_loss: 0.1121 - n_outputs1_loss: 0.0333 - val_loss: 0.1764 - val_n_outputs0_loss: 0.1456 - val_n_outputs1_loss: 0.0308
+Epoch 33/100
+10/10 [==============================] - ETA: 0s - loss: 0.1346 - n_outputs0_loss: 0.1043 - n_outputs1_loss: 0.0303
+Epoch 00033: val_loss improved from 0.17255 to 0.17092, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 115ms/step - loss: 0.1346 - n_outputs0_loss: 0.1043 - n_outputs1_loss: 0.0303 - val_loss: 0.1709 - val_n_outputs0_loss: 0.1395 - val_n_outputs1_loss: 0.0315
+Epoch 34/100
+10/10 [==============================] - ETA: 0s - loss: 0.1293 - n_outputs0_loss: 0.0991 - n_outputs1_loss: 0.0302
+Epoch 00034: val_loss improved from 0.17092 to 0.16704, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 109ms/step - loss: 0.1293 - n_outputs0_loss: 0.0991 - n_outputs1_loss: 0.0302 - val_loss: 0.1670 - val_n_outputs0_loss: 0.1342 - val_n_outputs1_loss: 0.0329
+Epoch 35/100
+10/10 [==============================] - ETA: 0s - loss: 0.1196 - n_outputs0_loss: 0.0890 - n_outputs1_loss: 0.0306
+Epoch 00035: val_loss improved from 0.16704 to 0.15917, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 110ms/step - loss: 0.1196 - n_outputs0_loss: 0.0890 - n_outputs1_loss: 0.0306 - val_loss: 0.1592 - val_n_outputs0_loss: 0.1280 - val_n_outputs1_loss: 0.0311
+Epoch 36/100
+10/10 [==============================] - ETA: 0s - loss: 0.1086 - n_outputs0_loss: 0.0805 - n_outputs1_loss: 0.0281
+Epoch 00036: val_loss improved from 0.15917 to 0.15774, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 114ms/step - loss: 0.1086 - n_outputs0_loss: 0.0805 - n_outputs1_loss: 0.0281 - val_loss: 0.1577 - val_n_outputs0_loss: 0.1264 - val_n_outputs1_loss: 0.0313
+Epoch 37/100
+10/10 [==============================] - ETA: 0s - loss: 0.1032 - n_outputs0_loss: 0.0753 - n_outputs1_loss: 0.0279
+Epoch 00037: val_loss did not improve from 0.15774
+10/10 [==============================] - 1s 99ms/step - loss: 0.1032 - n_outputs0_loss: 0.0753 - n_outputs1_loss: 0.0279 - val_loss: 0.1598 - val_n_outputs0_loss: 0.1281 - val_n_outputs1_loss: 0.0317
+Epoch 38/100
+10/10 [==============================] - ETA: 0s - loss: 0.1050 - n_outputs0_loss: 0.0783 - n_outputs1_loss: 0.0266
+Epoch 00038: val_loss did not improve from 0.15774
+10/10 [==============================] - 1s 105ms/step - loss: 0.1050 - n_outputs0_loss: 0.0783 - n_outputs1_loss: 0.0266 - val_loss: 0.1586 - val_n_outputs0_loss: 0.1269 - val_n_outputs1_loss: 0.0317
+Epoch 39/100
+10/10 [==============================] - ETA: 0s - loss: 0.0983 - n_outputs0_loss: 0.0722 - n_outputs1_loss: 0.0261
+Epoch 00039: val_loss improved from 0.15774 to 0.15441, saving model to ./models/msp-car-1.h5
+10/10 [==============================] - 1s 111ms/step - loss: 0.0983 - n_outputs0_loss: 0.0722 - n_outputs1_loss: 0.0261 - val_loss: 0.1544 - val_n_outputs0_loss: 0.1243 - val_n_outputs1_loss: 0.0301
+Epoch 40/100
+10/10 [==============================] - ETA: 0s - loss: 0.0967 - n_outputs0_loss: 0.0703 - n_outputs1_loss: 0.0265
+Epoch 00040: val_loss did not improve from 0.15441
+10/10 [==============================] - 1s 103ms/step - loss: 0.0967 - n_outputs0_loss: 0.0703 - n_outputs1_loss: 0.0265 - val_loss: 0.1588 - val_n_outputs0_loss: 0.1275 - val_n_outputs1_loss: 0.0313
+Epoch 41/100
+10/10 [==============================] - ETA: 0s - loss: 0.0989 - n_outputs0_loss: 0.0736 - n_outputs1_loss: 0.0253
+Epoch 00041: val_loss did not improve from 0.15441
+10/10 [==============================] - 1s 104ms/step - loss: 0.0989 - n_outputs0_loss: 0.0736 - n_outputs1_loss: 0.0253 - val_loss: 0.1580 - val_n_outputs0_loss: 0.1271 - val_n_outputs1_loss: 0.0308
+Epoch 42/100
+10/10 [==============================] - ETA: 0s - loss: 0.1010 - n_outputs0_loss: 0.0758 - n_outputs1_loss: 0.0253
+Epoch 00042: val_loss did not improve from 0.15441
+10/10 [==============================] - 1s 107ms/step - loss: 0.1010 - n_outputs0_loss: 0.0758 - n_outputs1_loss: 0.0253 - val_loss: 0.1614 - val_n_outputs0_loss: 0.1315 - val_n_outputs1_loss: 0.0299
+Epoch 43/100
+10/10 [==============================] - ETA: 0s - loss: 0.0923 - n_outputs0_loss: 0.0680 - n_outputs1_loss: 0.0243
+Epoch 00043: val_loss did not improve from 0.15441
+10/10 [==============================] - 1s 101ms/step - loss: 0.0923 - n_outputs0_loss: 0.0680 - n_outputs1_loss: 0.0243 - val_loss: 0.1587 - val_n_outputs0_loss: 0.1298 - val_n_outputs1_loss: 0.0288
+Epoch 44/100
+10/10 [==============================] - ETA: 0s - loss: 0.0870 - n_outputs0_loss: 0.0629 - n_outputs1_loss: 0.0242
+Epoch 00044: val_loss did not improve from 0.15441
+10/10 [==============================] - 1s 105ms/step - loss: 0.0870 - n_outputs0_loss: 0.0629 - n_outputs1_loss: 0.0242 - val_loss: 0.1601 - val_n_outputs0_loss: 0.1304 - val_n_outputs1_loss: 0.0296
+WARNING: CPU random generator seem to be failing, disable hardware random number generation
+WARNING: RDRND generated: 0xffffffff 0xffffffff 0xffffffff 0xffffffff
+
+real    1m10.563s
+user    1m11.485s
+sys 0m39.110s
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../admin/joystick/" title="Joystick" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Joystick
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../msp-car-2/" title="MSP Car 2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                MSP Car 2
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          All content including images are licensed under 
+          <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons 
+            Attribution NonCommercial ShareAlike</a>
+      </div>
+      <div class="md-social">
+  
+</div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
