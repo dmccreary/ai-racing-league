@@ -149,7 +149,7 @@ theme:
   include_sidebar: true
 markdown_extensions:
   - admonition
-  - html_in_md
+  - md_in_html
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
