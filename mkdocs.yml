@@ -137,7 +137,7 @@ nav:
 
 # Standard Stuff
 repo_name: 'Link to GitHub'
-edit_uri: 'blob/master/docs'
+edit_uri: 'blob/main/docs'
 theme:
   name: material
   logo: img/car-small.png
